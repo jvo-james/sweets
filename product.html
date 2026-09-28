@@ -3,42 +3,73 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Sweets fragrance product page.">
-  <title>Fragrance | Sweets</title>
+  <title>Product | Sweets</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.svg" type="image/svg+xml">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script><script defer src="script.js"></script>
 </head>
 <body>
   <div class="announcement"><span>Free delivery over GH₵600</span><span class="announcement-rule"></span><span>New scents are in</span></div>
-  <header class="site-header" data-header>
-    <div class="header-inner"><a class="brand" href="index.html" aria-label="Sweets home"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a><nav class="desktop-nav" aria-label="Main navigation"><a href="shop.html">Shop</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Unisex">Unisex</a><a href="finder.html">Find your scent</a><a href="about.html">About</a></nav><div class="header-actions"><button class="icon-button" type="button" data-search-toggle aria-label="Open search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button><a class="icon-button" href="cart.html" aria-label="Open bag"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span class="cart-count" data-cart-count>0</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div></div>
-    <div class="search-drawer" data-search-drawer><form class="search-form" action="shop.html" method="get"><label for="site-search">What are you looking for?</label><div class="search-row"><input id="site-search" name="q" type="search" placeholder="Search perfumes" autocomplete="off"><button type="submit" class="text-arrow">Search <span class="arrow-icon" aria-hidden="true"></span></button></div></form></div>
-    <div class="mobile-menu" data-mobile-menu><nav aria-label="Mobile navigation"><a href="shop.html">Shop <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Women">Women <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Men">Men <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Unisex">Unisex <span class="arrow-icon" aria-hidden="true"></span></a><a href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a><a href="about.html">About <span class="arrow-icon" aria-hidden="true"></span></a></nav></div>
-  </header>
+  <header class="site-header" data-header><div class="header-inner"><a class="brand" href="index.html" aria-label="Sweets home"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a><nav class="desktop-nav" aria-label="Main navigation"><a href="shop.html">Shop</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Unisex">Unisex</a><a href="finder.html">Find your scent</a><a href="about.html">About</a></nav><div class="header-actions"><button class="icon-button" type="button" data-search-toggle aria-label="Open search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button><a class="icon-button cart-link" href="cart.html" aria-label="Open bag"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span class="cart-count" data-cart-count>0</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div></div><div class="search-drawer" data-search-drawer><form class="search-form" action="shop.html" method="get"><label for="site-search">What are you looking for?</label><div class="search-row"><input id="site-search" name="q" type="search" placeholder="Search perfumes" autocomplete="off"><button type="submit" class="text-arrow">Search <span class="arrow-icon" aria-hidden="true"></span></button></div></form></div><div class="mobile-menu" data-mobile-menu><nav aria-label="Mobile navigation"><a href="shop.html">Shop <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Women">Women <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Men">Men <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Unisex">Unisex <span class="arrow-icon" aria-hidden="true"></span></a><a href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a><a href="about.html">About <span class="arrow-icon" aria-hidden="true"></span></a></nav></div></header>
 
-  <main class="product-page" data-product-detail>
-    <div class="section-shell product-top">
-      <div class="product-gallery">
-        <div class="product-main-image" data-product-main-image role="img" aria-label="Sweets fragrance bottle"></div>
-        <div class="product-thumbs" data-product-thumbs style="display:contents"></div>
-      </div>
-      <aside class="product-detail-copy">
-        <a class="back-link" href="shop.html"><span class="arrow-left" aria-hidden="true"></span> Back to shop</a>
-        <div class="product-detail-meta"><p class="eyebrow" data-product-gender>Unisex / Fresh</p><h1 data-product-name>Rose Silk</h1><div class="product-detail-rating"><span data-product-rating></span><span data-product-reviews>4.9 · 68 reviews</span></div><p class="product-description" data-product-description></p>
-          <div class="buy-box"><div class="buy-price-row"><strong class="buy-price" data-product-price>GH₵560</strong><span class="eyebrow" style="margin:0" data-product-size>50 ml</span></div><div class="size-row"><button type="button" class="size-button active" data-size="50">50 ml</button><button type="button" class="size-button" data-size="100">100 ml</button></div><div class="product-buy-row"><div class="quantity-stepper"><button type="button" data-qty-minus aria-label="Decrease quantity">−</button><span data-product-qty>1</span><button type="button" data-qty-plus aria-label="Increase quantity">+</button></div><button type="button" class="button button-dark add-to-cart" data-add-product>Add to bag <span class="arrow-icon" aria-hidden="true"></span></button></div></div>
-          <div class="product-details">
-            <details class="detail-row" open><summary>Fragrance notes</summary><div class="notes-grid"><div><span class="note-title">Top</span><p class="note-value" data-note-top></p></div><div><span class="note-title">Heart</span><p class="note-value" data-note-heart></p></div><div><span class="note-title">Base</span><p class="note-value" data-note-base></p></div></div></details>
-            <details class="detail-row"><summary>What it feels like</summary><p data-product-feel></p></details>
-            <details class="detail-row"><summary>A little about this one</summary><p data-story-copy></p></details>
-          </div>
+  <main>
+    <section class="product-detail section-shell" data-product-detail>
+      <div class="product-detail-gallery"><div class="product-main-image" data-product-main-image></div><div class="product-thumbs" data-product-thumbs></div></div>
+      <div class="product-detail-copy">
+        <a class="back-link" href="shop.html"><span class="arrow-left" aria-hidden="true">←</span> Back to shop</a>
+        <p class="eyebrow" data-product-gender></p>
+        <h1 data-product-name>Sweets fragrance</h1>
+        <div class="product-meta-row"><div class="stars" data-product-rating aria-label="Product rating">4.9 / 5</div><span class="review-count" data-product-reviews>42 reviews</span></div>
+        <p class="product-price" data-product-price>GH₵0</p>
+        <p class="product-description" data-product-description></p>
+        <div class="product-option"><div class="option-label"><span>Size</span><strong data-size-value>50 ml</strong></div><div class="size-switch"><button class="size-option active" type="button" data-size="50">50 ml</button><button class="size-option" type="button" data-size="100">100 ml</button></div></div>
+        <div class="product-buy-row"><div class="quantity-stepper"><button type="button" data-qty-minus aria-label="Decrease quantity">−</button><span data-product-qty>1</span><button type="button" data-qty-plus aria-label="Increase quantity">+</button></div><button type="button" class="button button-dark add-to-cart" data-add-product>Add to bag <span class="arrow-icon" aria-hidden="true"></span></button></div>
+        <a class="whatsapp-note" href="https://wa.me/233000000000?text=Hi%20Sweets,%20I%20want%20to%20ask%20about%20a%20fragrance." target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Ask about this scent on WhatsApp</a>
+        <div class="product-accordions">
+          <details open><summary>Fragrance notes <span>+</span></summary><div class="notes-layout"><div><small>TOP</small><p data-note-top></p></div><div><small>HEART</small><p data-note-heart></p></div><div><small>BASE</small><p data-note-base></p></div></div></details>
+          <details><summary>How it feels <span>+</span></summary><p data-product-feel></p></details>
+          <details><summary>Delivery <span>+</span></summary><p>Orders shown here are a concept flow. In the live shop this section can show delivery areas, fees and estimated times.</p></details>
         </div>
-      </aside>
-    </div>
+      </div>
+    </section>
+
+    <section class="fragrance-story section-space"><div class="section-shell fragrance-story-grid"><div class="fragrance-story-copy"><p class="eyebrow">The scent</p><h2 data-story-title>One bottle, one mood.</h2><p data-story-copy>Every Sweets bottle starts with one clear idea. The name, notes and look should all feel like the same thing.</p></div><div class="fragrance-pyramid"><div class="pyramid pyramid-top"><span>Top</span><strong data-note-top-short>Citrus</strong></div><div class="pyramid pyramid-heart"><span>Heart</span><strong data-note-heart-short>Floral</strong></div><div class="pyramid pyramid-base"><span>Base</span><strong data-note-base-short>Soft woods</strong></div></div></div></section>
 
     <section class="related section-shell section-space"><div class="section-heading split-heading"><div><p class="eyebrow">You might like</p><h2>Try another one.</h2></div><a class="underlined-link" href="shop.html">See all fragrances <span class="arrow-icon" aria-hidden="true"></span></a></div><div class="product-grid product-grid-four" data-related-products></div></section>
   </main>
-
-  <footer class="site-footer"><div class="section-shell footer-top"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a><p>Fragrance for regular days and the good ones.</p></div><div class="footer-column"><p class="footer-label">Shop</p><a href="shop.html">All scents</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Unisex">Unisex</a></div><div class="footer-column"><p class="footer-label">Find</p><a href="finder.html">Find your scent</a><a href="shop.html?scent=Floral">Soft</a><a href="shop.html?scent=Woody">Deep</a><a href="shop.html?scent=Citrus">Fresh</a></div><div class="footer-column"><p class="footer-label">Help</p><a href="about.html">About Sweets</a><a href="contact.html">Contact</a><a href="cart.html">Your bag</a></div><div class="footer-column"><p class="footer-label">Follow</p><a href="#">Instagram</a><a href="#">TikTok</a><a href="mailto:hello@sweetsfragrance.com">Email us</a></div></div><div class="section-shell footer-bottom"><span>© <span data-year></span> Sweets</span><span>Concept site. Product details are sample content.</span><span>Made to smell good.</span></div></footer>
+  <footer class="site-footer">
+  <div class="section-shell footer-top">
+    <div class="footer-brand">
+      <a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a>
+      <p>Fragrance for regular days and the good ones.</p>
+      <a class="footer-editorial-link" href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Shop</p>
+      <a href="shop.html">All scents</a>
+      <a href="shop.html?gender=Women">Women</a>
+      <a href="shop.html?gender=Men">Men</a>
+      <a href="shop.html?gender=Unisex">Unisex</a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Help</p>
+      <a href="finder.html">Find your scent</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Your bag</a>
+      <a href="about.html">About Sweets</a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Follow</p>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="TikTok">TikTok</a>
+      <a href="mailto:hello@sweetsfragrance.com">Email us</a>
+    </div>
+  </div>
+  <div class="section-shell footer-bottom">
+    <span>© <span data-year></span> Sweets</span>
+    <span>Concept site. Product details are sample content.</span>
+    <span>Made to smell good.</span>
+  </div>
+</footer>
 </body>
 </html>

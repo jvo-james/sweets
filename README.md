@@ -1,24 +1,26 @@
-# Sweets fragrance concept
+# Sweets fragrance shop concept
 
-A light, editorial perfume shop concept for **Sweets**. Static HTML, CSS and JavaScript. No build step and no folders inside the repo.
+A static multi-page fragrance shop concept for a brand called **Sweets**.
 
-## Pages
+### Pages
 
 - `index.html` home
-- `shop.html` shop with search, filters, sorting and 29 sample products
-- `product.html?id=...` product detail pages
+- `shop.html` full shop with search, filters and sorting
+- `product.html?id=rose-silk` dynamic product page
 - `finder.html` fragrance finder
 - `about.html` about page
 - `contact.html` contact page
-- `cart.html` local browser bag and demo checkout
-- `404.html` fallback page
+- `cart.html` localStorage shopping bag and demo checkout
+- `styles.css` all styling
+- `script.js` product data and interactions
+- `favicon.svg` simple Sweets mark
 
-## Notes
+There are no folders in the repo.
 
-The concept uses sample product names, notes and prices so the layout can be reviewed before replacing the content with the client's real catalog.
+### Notes for the live client site
 
-Product and editorial photography uses remote Unsplash image URLs. Replace these with the client's own product photography for a final launch.
+The product names, prices, descriptions, phone number and email are sample content for the concept. The WhatsApp links use a placeholder number.
 
-The bag uses `localStorage`, so adding a product works without a backend. The checkout button is intentionally a demo.
+The product photos use Unsplash image URLs. The images were selected from Unsplash pages that are marked as free to use in the sources checked while building the concept. Replace the image URLs with the client's own product photos before launch so the real bottles match the product names.
 
-The small arrow marks are CSS-drawn rather than Unicode characters. This avoids mobile browsers turning the arrows into emoji-style glyphs.
+For a real store, the demo checkout can be connected to a payment provider or turned into a WhatsApp order flow. The bag currently uses browser localStorage.

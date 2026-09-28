@@ -3,30 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sweets is a fragrance shop with fresh, floral, sweet and woody scents. Find a bottle that fits you.">
-  <title>Sweets | Your scent. Your way.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script><script defer src="script.js"></script>
+  <meta name="description" content="Sweets makes fragrance feel personal. Shop fresh, floral, warm and woody scents for every day and every night.">
+  <title>Sweets | Fragrance, your way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body class="home-page">
   <div class="announcement"><span>Free delivery over GH₵600</span><span class="announcement-rule"></span><span>New scents are in</span></div>
+
   <header class="site-header" data-header>
     <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="Sweets home"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a>
-      <nav class="desktop-nav" aria-label="Main navigation"><a href="shop.html">Shop</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Unisex">Unisex</a><a href="finder.html">Find your scent</a><a href="about.html">About</a></nav>
-      <div class="header-actions"><button class="icon-button" type="button" data-search-toggle aria-label="Open search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button><a class="icon-button" href="cart.html" aria-label="Open bag"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span class="cart-count" data-cart-count>0</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div>
+      <a class="brand" href="index.html" aria-label="Sweets home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sweets</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?gender=Women">Women</a>
+        <a href="shop.html?gender=Men">Men</a>
+        <a href="shop.html?gender=Unisex">Unisex</a>
+        <a href="finder.html">Find your scent</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" type="button" data-search-toggle aria-label="Open search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+        <a class="icon-button cart-link" href="cart.html" aria-label="Open bag"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span class="cart-count" data-cart-count>0</span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
     </div>
-    <div class="search-drawer" data-search-drawer><form class="search-form" action="shop.html" method="get"><label for="site-search">What are you looking for?</label><div class="search-row"><input id="site-search" name="q" type="search" placeholder="Search perfumes" autocomplete="off"><button type="submit" class="text-arrow">Search <span class="arrow-icon" aria-hidden="true"></span></button></div></form></div>
-    <div class="mobile-menu" data-mobile-menu><nav aria-label="Mobile navigation"><a href="shop.html">Shop <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Women">Women <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Men">Men <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Unisex">Unisex <span class="arrow-icon" aria-hidden="true"></span></a><a href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a><a href="about.html">About <span class="arrow-icon" aria-hidden="true"></span></a></nav></div>
+    <div class="search-drawer" data-search-drawer>
+      <form class="search-form" action="shop.html" method="get">
+        <label for="site-search">What are you looking for?</label>
+        <div class="search-row"><input id="site-search" name="q" type="search" placeholder="Search perfumes" autocomplete="off"><button type="submit" class="text-arrow">Search <span class="arrow-icon" aria-hidden="true"></span></button></div>
+      </form>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <nav aria-label="Mobile navigation">
+        <a href="shop.html">Shop <span class="arrow-icon" aria-hidden="true"></span></a>
+        <a href="shop.html?gender=Women">Women <span class="arrow-icon" aria-hidden="true"></span></a>
+        <a href="shop.html?gender=Men">Men <span class="arrow-icon" aria-hidden="true"></span></a>
+        <a href="shop.html?gender=Unisex">Unisex <span class="arrow-icon" aria-hidden="true"></span></a>
+        <a href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a>
+        <a href="about.html">About <span class="arrow-icon" aria-hidden="true"></span></a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero-home" aria-label="Sweets fragrance" style="background:#a49689">
-      <div class="hero-image" data-home-hero></div><div class="hero-overlay"></div>
-      <div class="hero-copy"><p class="eyebrow light">Sweets fragrance</p><h1>Your scent.<br><em>Your way.</em></h1><p>Good perfume does not have to shout. It just needs to feel like you.</p><div class="hero-actions"><a class="button button-light" href="shop.html">Shop fragrances <span class="arrow-icon" aria-hidden="true"></span></a><a class="button button-ghost-light" href="finder.html">Find my scent</a></div></div>
-      <div class="hero-note">01 / Sweets collection</div>
+    <section class="hero hero-home">
+      <div class="hero-image" style="--bg:url('https://images.unsplash.com/photo-1733660227163-01bc46e0d7d7?auto=format&fit=crop&w=1800&q=88');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow light">Sweets fragrance</p>
+        <h1>Your scent.<br><em>Your way.</em></h1>
+        <p>Good perfume does not have to shout. It just needs to feel like you.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="shop.html">Shop fragrances <span class="arrow-icon" aria-hidden="true"></span></a>
+          <a class="button button-ghost-light" href="finder.html">Find my scent</a>
+        </div>
+      </div>
+      <div class="hero-note">The Sweets collection</div>
     </section>
 
     <section class="intro section-shell">
@@ -34,58 +77,146 @@
       <div class="intro-copy">
         <p class="display-copy">Perfume is part of the outfit. Some days it is soft. Some days it is loud. Sweets is made for both.</p>
         <a class="underlined-link" href="about.html">Read our story <span class="arrow-icon" aria-hidden="true"></span></a>
-        <figure class="intro-photo"><img src="https://images.unsplash.com/photo-1727264374334-258e5e2f3f7a?auto=format&fit=crop&w=1400&q=86" alt="Person holding a perfume bottle" loading="lazy"><figcaption><span>A bottle, a mood, a day</span><span>Sweets, Accra</span></figcaption></figure>
+        <div class="intro-image" style="background-image:url('https://images.unsplash.com/photo-1572566202186-611ceb4042f0?auto=format&fit=crop&w=1500&q=88');" role="img" aria-label="Minimal perfume bottle and floral still life"></div>
       </div>
     </section>
 
-    <section class="section-shell section-space">
-      <div class="section-heading split-heading"><div><p class="eyebrow">Shop by mood</p><h2>Pick the feeling.</h2></div><p class="heading-note">Start with a mood, then find the bottle that fits.</p></div>
+    <section class="mood-section section-shell section-space">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Shop by mood</p>
+          <h2>Pick the feeling.</h2>
+        </div>
+        <p class="heading-note">Start with a mood, then find the bottle that fits.</p>
+      </div>
       <div class="mood-grid">
-        <a class="mood-card" href="shop.html?scent=Floral"><div class="mood-image" style="background-image:url('https://images.unsplash.com/photo-1623071281935-c778d4a6dd0c?auto=format&fit=crop&w=1300&q=86')"></div><div class="mood-shade"></div><div class="mood-copy"><small>01</small><h3>Soft</h3><p>Rose, petals, clean musk</p></div><span class="corner-arrow" aria-hidden="true"><span class="arrow-icon"></span></span></a>
-        <a class="mood-card" href="shop.html?scent=Woody"><div class="mood-image" style="background-image:url('https://images.unsplash.com/photo-1635796342460-368cf1927238?auto=format&fit=crop&w=1100&q=86')"></div><div class="mood-shade"></div><div class="mood-copy"><small>02</small><h3>Deep</h3><p>Oud, cedar, amber</p></div><span class="corner-arrow" aria-hidden="true"><span class="arrow-icon"></span></span></a>
-        <a class="mood-card" href="shop.html?scent=Citrus"><div class="mood-image" style="background-image:url('https://images.unsplash.com/photo-1766362366600-3bc8835c404a?auto=format&fit=crop&w=1100&q=86')"></div><div class="mood-shade"></div><div class="mood-copy"><small>03</small><h3>Fresh</h3><p>Citrus, green notes, clean woods</p></div><span class="corner-arrow" aria-hidden="true"><span class="arrow-icon"></span></span></a>
+        <a class="mood-card mood-card-wide" href="shop.html?scent=Floral">
+          <div class="mood-image" style="--bg:url('https://images.unsplash.com/photo-1622916132646-50a2a6fe9b9a?auto=format&fit=crop&w=1200&q=85');"></div>
+          <div class="mood-shade"></div>
+          <div class="mood-copy"><span>1</span><h3>Soft</h3><p>Rose, petals, clean musk</p></div>
+          <span class="corner-arrow arrow-icon" aria-hidden="true"></span>
+        </a>
+        <a class="mood-card" href="shop.html?scent=Woody">
+          <div class="mood-image" style="--bg:url('https://images.unsplash.com/photo-1672848812581-f6e71ffa6839?auto=format&fit=crop&w=1000&q=85');"></div>
+          <div class="mood-shade"></div>
+          <div class="mood-copy"><span>2</span><h3>Deep</h3><p>Oud, cedar, amber</p></div>
+          <span class="corner-arrow arrow-icon" aria-hidden="true"></span>
+        </a>
+        <a class="mood-card" href="shop.html?scent=Citrus">
+          <div class="mood-image" style="--bg:url('https://images.unsplash.com/photo-1615634260830-85d92cd1b769?auto=format&fit=crop&w=1000&q=85');"></div>
+          <div class="mood-shade"></div>
+          <div class="mood-copy"><span>3</span><h3>Fresh</h3><p>Mandarin, citrus, clean woods</p></div>
+          <span class="corner-arrow arrow-icon" aria-hidden="true"></span>
+        </a>
       </div>
     </section>
 
-    <section class="section-shell section-space">
-      <div class="carousel-head"><div><p class="eyebrow">New in</p><h2>New bottles, same good smell.</h2></div><div class="carousel-controls" aria-label="New in controls"><button class="carousel-button" type="button" data-carousel-prev data-carousel-target="[data-home-new-products]" aria-label="Previous new scents"><span class="arrow-icon" aria-hidden="true"></span></button><button class="carousel-button" type="button" data-carousel-next data-carousel-target="[data-home-new-products]" aria-label="Next new scents"><span class="arrow-icon" aria-hidden="true"></span></button></div></div>
-      <div class="product-carousel" data-home-new-products></div>
-      <div style="margin-top:26px"><a class="underlined-link" href="shop.html?sort=newest">See all new scents <span class="arrow-icon" aria-hidden="true"></span></a></div>
+    <section class="product-section section-shell section-space">
+      <div class="section-heading split-heading">
+        <div><p class="eyebrow">New in</p><h2>New bottles, same good smell.</h2></div>
+        <a class="underlined-link" href="shop.html?sort=newest">See all new scents <span class="arrow-icon" aria-hidden="true"></span></a>
+      </div>
+      <div class="new-slider" data-new-slider>
+        <div class="slider-controls">
+          <button class="slider-control" type="button" data-new-prev aria-label="Previous new scent"><span class="arrow-left" aria-hidden="true"></span></button>
+          <button class="slider-control" type="button" data-new-next aria-label="Next new scent"><span class="arrow-icon" aria-hidden="true"></span></button>
+        </div>
+        <div class="new-slider-viewport">
+          <div class="new-slider-track" data-home-new-products></div>
+        </div>
+      </div>
     </section>
 
-    <section class="campaign section-space">
-      <div class="campaign-media" style="background-image:url('https://images.unsplash.com/photo-1733660227083-12b78ad0073d?auto=format&fit=crop&w=1500&q=86')"></div>
-      <div class="campaign-copy"><p class="eyebrow">For late nights</p><h2>Wear something<br><em>people remember.</em></h2><p>Warm woods. Amber. A little sweetness. These are for plans that run late.</p><a class="button button-dark" href="shop.html?scent=Woody">Shop night scents <span class="arrow-icon" aria-hidden="true"></span></a></div>
+    <section class="campaign campaign-light section-space">
+      <div class="campaign-media" style="background-image:url('https://images.unsplash.com/photo-1709662369957-0cbf9f8452fc?auto=format&fit=crop&w=1500&q=86');"></div>
+      <div class="campaign-copy">
+        <p class="eyebrow">For late nights</p>
+        <h2>Wear something<br><em>people remember.</em></h2>
+        <p>Warm woods. Amber. A little sweetness. The night collection is built for plans that run late.</p>
+        <a class="button button-dark" href="shop.html?scent=Woody">Shop night scents <span class="arrow-icon" aria-hidden="true"></span></a>
+      </div>
     </section>
 
-    <section class="section-shell section-space">
-      <div class="section-heading split-heading"><div><p class="eyebrow">Most wanted</p><h2>A few bottles worth looking at.</h2></div><p class="heading-note">Tap a photo and go straight to the scent.</p></div>
-      <div class="gallery-wrap" data-home-gallery></div>
+    <section class="best-section section-shell section-space">
+      <div class="section-heading split-heading">
+        <div><p class="eyebrow">Most wanted</p><h2>The bottles people keep coming back to.</h2></div>
+        <a class="underlined-link" href="shop.html?sort=popular">Shop best sellers <span class="arrow-icon" aria-hidden="true"></span></a>
+      </div>
+      <div class="best-gallery" data-home-best-gallery></div>
     </section>
 
     <section class="split-image-section section-space">
-      <div class="split-panel-image" style="background-image:url('https://images.unsplash.com/photo-1646032048829-5377b5c0feba?auto=format&fit=crop&w=1400&q=86')"></div>
-      <div class="split-panel-copy"><p class="eyebrow">For every version of you</p><h2>Men. Women.<br><em>Everybody.</em></h2><p>Some bottles lean floral. Some lean woody. A lot sit somewhere in the middle. Shop the way you actually wear fragrance.</p><div class="link-row"><a class="underlined-link" href="shop.html?gender=Women">Women <span class="arrow-icon" aria-hidden="true"></span></a><a class="underlined-link" href="shop.html?gender=Men">Men <span class="arrow-icon" aria-hidden="true"></span></a><a class="underlined-link" href="shop.html?gender=Unisex">Unisex <span class="arrow-icon" aria-hidden="true"></span></a></div></div>
-    </section>
-
-    <section class="finder-banner section-space" style="--finder-bg:url('https://images.unsplash.com/photo-1690828877746-053e2fe9bb0a?auto=format&fit=crop&w=1800&q=86')">
-      <div class="finder-banner-inner section-shell"><div><p class="eyebrow light">Not sure yet?</p><h2>Let us narrow it down.</h2><p>Answer a few quick questions and we will point you to a few scents that fit.</p></div><a class="button button-light" href="finder.html">Find my scent <span class="arrow-icon" aria-hidden="true"></span></a></div>
-    </section>
-
-    <section class="section-shell section-space">
-      <div class="section-heading"><p class="eyebrow">People say</p><h2>Simple things. Good smell.</h2></div>
-      <div class="product-grid product-grid-three">
-        <article class="testimonial"><p class="display-copy">“Rose Silk is the one. Soft enough for day and still there at dinner.”</p><small>Customer note / Accra</small></article>
-        <article class="testimonial"><p class="display-copy">“I wanted something clean. Clean Linen is exactly that.”</p><small>Customer note / Tema</small></article>
-        <article class="testimonial"><p class="display-copy">“Dark Vanilla gets people asking what I am wearing.”</p><small>Customer note / East Legon</small></article>
+      <div class="split-panel split-panel-image" style="background-image:url('https://images.unsplash.com/photo-1611268622894-2ae2cff570bb?auto=format&fit=crop&w=1300&q=86');"></div>
+      <div class="split-panel split-panel-copy">
+        <p class="eyebrow">For every version of you</p>
+        <h2>Men. Women.<br><em>Everybody.</em></h2>
+        <p>Some bottles lean floral. Some lean woody. A lot sit somewhere in the middle. Shop the way you actually wear fragrance.</p>
+        <div class="link-row">
+          <a class="underlined-link" href="shop.html?gender=Women">Women <span class="arrow-icon" aria-hidden="true"></span></a>
+          <a class="underlined-link" href="shop.html?gender=Men">Men <span class="arrow-icon" aria-hidden="true"></span></a>
+          <a class="underlined-link" href="shop.html?gender=Unisex">Unisex <span class="arrow-icon" aria-hidden="true"></span></a>
+        </div>
       </div>
     </section>
 
+    <section class="finder-banner section-space" style="background-image:url('https://images.unsplash.com/photo-1590580463662-88d585eda98f?auto=format&fit=crop&w=1800&q=88');">
+      <div class="finder-banner-inner section-shell">
+        <div><p class="eyebrow">Not sure yet?</p><h2>Let us narrow it down.</h2><p>Answer a few quick questions and we will point you to a few scents that fit.</p></div>
+        <a class="button button-light" href="finder.html">Find my scent <span class="arrow-icon" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <section class="quote-section section-shell section-space">
+      <div class="quote-mark">“</div>
+      <blockquote>A good scent changes the way you walk into a room.</blockquote>
+      <p>That is really what Sweets is about.</p>
+    </section>
+
     <section class="newsletter section-shell section-space">
-      <div class="newsletter-inner"><div><p class="eyebrow">Stay close</p><h2>New bottles. Small updates.</h2><p>No spam. Just new scents and the occasional good deal.</p></div><form class="newsletter-form" data-newsletter-form><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" placeholder="Your email address" required><button class="button button-dark" type="submit">Join <span class="arrow-icon" aria-hidden="true"></span></button></form></div>
+      <div class="newsletter-inner">
+        <div><p class="eyebrow">Stay close</p><h2>New bottles. Small updates.</h2><p>No spam. Just new scents and the occasional good deal.</p></div>
+        <form class="newsletter-form" data-newsletter-form>
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Your email address" required>
+          <button class="button button-dark" type="submit">Join <span class="arrow-icon" aria-hidden="true"></span></button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="section-shell footer-top"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a><p>Fragrance for regular days and the good ones.</p></div><div class="footer-column"><p class="footer-label">Shop</p><a href="shop.html">All scents</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Unisex">Unisex</a></div><div class="footer-column"><p class="footer-label">Find</p><a href="finder.html">Find your scent</a><a href="shop.html?scent=Floral">Soft</a><a href="shop.html?scent=Woody">Deep</a><a href="shop.html?scent=Citrus">Fresh</a></div><div class="footer-column"><p class="footer-label">Help</p><a href="about.html">About Sweets</a><a href="contact.html">Contact</a><a href="cart.html">Your bag</a></div><div class="footer-column"><p class="footer-label">Follow</p><a href="#">Instagram</a><a href="#">TikTok</a><a href="mailto:hello@sweetsfragrance.com">Email us</a></div></div><div class="section-shell footer-bottom"><span>© <span data-year></span> Sweets</span><span>Concept site. Product details are sample content.</span><span>Made to smell good.</span></div></footer>
+  <footer class="site-footer">
+  <div class="section-shell footer-top">
+    <div class="footer-brand">
+      <a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a>
+      <p>Fragrance for regular days and the good ones.</p>
+      <a class="footer-editorial-link" href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Shop</p>
+      <a href="shop.html">All scents</a>
+      <a href="shop.html?gender=Women">Women</a>
+      <a href="shop.html?gender=Men">Men</a>
+      <a href="shop.html?gender=Unisex">Unisex</a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Help</p>
+      <a href="finder.html">Find your scent</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Your bag</a>
+      <a href="about.html">About Sweets</a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Follow</p>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="TikTok">TikTok</a>
+      <a href="mailto:hello@sweetsfragrance.com">Email us</a>
+    </div>
+  </div>
+  <div class="section-shell footer-bottom">
+    <span>© <span data-year></span> Sweets</span>
+    <span>Concept site. Product details are sample content.</span>
+    <span>Made to smell good.</span>
+  </div>
+</footer>
 </body>
 </html>

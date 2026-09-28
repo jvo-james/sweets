@@ -2,36 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Find a Sweets fragrance by smell, occasion, strength and who it is for.">
+  <meta name="description" content="Find your Sweets fragrance by mood, occasion and scent family.">
   <title>Find Your Scent | Sweets</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="icon" href="favicon.svg" type="image/svg+xml">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script><script defer src="script.js"></script>
 </head>
 <body>
   <div class="announcement"><span>Free delivery over GH₵600</span><span class="announcement-rule"></span><span>New scents are in</span></div>
-  <header class="site-header" data-header>
-    <div class="header-inner"><a class="brand" href="index.html" aria-label="Sweets home"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a><nav class="desktop-nav" aria-label="Main navigation"><a href="shop.html">Shop</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Unisex">Unisex</a><a class="active" href="finder.html">Find your scent</a><a href="about.html">About</a></nav><div class="header-actions"><button class="icon-button" type="button" data-search-toggle aria-label="Open search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button><a class="icon-button" href="cart.html" aria-label="Open bag"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span class="cart-count" data-cart-count>0</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div></div>
-    <div class="search-drawer" data-search-drawer><form class="search-form" action="shop.html" method="get"><label for="site-search">What are you looking for?</label><div class="search-row"><input id="site-search" name="q" type="search" placeholder="Search perfumes" autocomplete="off"><button type="submit" class="text-arrow">Search <span class="arrow-icon" aria-hidden="true"></span></button></div></form></div>
-    <div class="mobile-menu" data-mobile-menu><nav aria-label="Mobile navigation"><a href="shop.html">Shop <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Women">Women <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Men">Men <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Unisex">Unisex <span class="arrow-icon" aria-hidden="true"></span></a><a href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a><a href="about.html">About <span class="arrow-icon" aria-hidden="true"></span></a></nav></div>
-  </header>
+  <header class="site-header" data-header><div class="header-inner"><a class="brand" href="index.html" aria-label="Sweets home"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a><nav class="desktop-nav" aria-label="Main navigation"><a href="shop.html">Shop</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Unisex">Unisex</a><a class="active" href="finder.html">Find your scent</a><a href="about.html">About</a></nav><div class="header-actions"><button class="icon-button" type="button" data-search-toggle aria-label="Open search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button><a class="icon-button cart-link" href="cart.html" aria-label="Open bag"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span class="cart-count" data-cart-count>0</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div></div><div class="search-drawer" data-search-drawer><form class="search-form" action="shop.html" method="get"><label for="site-search">What are you looking for?</label><div class="search-row"><input id="site-search" name="q" type="search" placeholder="Search perfumes" autocomplete="off"><button type="submit" class="text-arrow">Search <span class="arrow-icon" aria-hidden="true"></span></button></div></form></div><div class="mobile-menu" data-mobile-menu><nav aria-label="Mobile navigation"><a href="shop.html">Shop <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Women">Women <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Men">Men <span class="arrow-icon" aria-hidden="true"></span></a><a href="shop.html?gender=Unisex">Unisex <span class="arrow-icon" aria-hidden="true"></span></a><a href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a><a href="about.html">About <span class="arrow-icon" aria-hidden="true"></span></a></nav></div></header>
 
   <main>
-    <section class="finder-hero"><div class="finder-hero-image"></div><div class="finder-hero-copy"><p class="eyebrow light">Find your scent</p><h1>Do not overthink it.</h1><p>Tell us what you like, when you will wear it and how much presence you want. We will bring back a few bottles to try.</p></div></section>
+    <section class="finder-hero"><div class="finder-hero-image" style="background-image:url('https://images.unsplash.com/photo-1587304431894-c7daa9d17556?auto=format&fit=crop&w=1800&q=86');"></div><div class="finder-hero-copy"><p class="eyebrow light">Find your scent</p><h1>Do not overthink it.</h1><p>Tell us the kind of smell you like and how you plan to wear it. We will give you a few bottles to start with.</p></div></section>
 
-    <section class="finder-flow section-shell section-space" style="--finder-step:1">
-      <div class="finder-progress"><span class="progress-step active" data-progress="1">01</span><span></span><span class="progress-step" data-progress="2">02</span><span></span><span class="progress-step" data-progress="3">03</span><span></span><span class="progress-step" data-progress="4">04</span></div>
+    <section class="finder-flow section-shell section-space">
+      <div class="finder-progress"><span class="progress-step active" data-progress="1">1</span><span></span><span class="progress-step" data-progress="2">2</span><span></span><span class="progress-step" data-progress="3">3</span><span></span><span class="progress-step" data-progress="4">4</span></div>
       <form class="finder-form" data-finder-form>
         <fieldset class="finder-step active" data-step="1"><p class="eyebrow">First</p><h2>What sounds good?</h2><div class="choice-grid"><label class="choice-card"><input type="radio" name="family" value="Floral" required><span><b>Floral</b><small>Rose, petals, soft musk</small></span></label><label class="choice-card"><input type="radio" name="family" value="Woody"><span><b>Woody</b><small>Cedar, oud, dry woods</small></span></label><label class="choice-card"><input type="radio" name="family" value="Citrus"><span><b>Citrus</b><small>Mandarin, lemon, bright notes</small></span></label><label class="choice-card"><input type="radio" name="family" value="Gourmand"><span><b>Sweet</b><small>Vanilla, amber, warm spice</small></span></label><label class="choice-card"><input type="radio" name="family" value="Fresh"><span><b>Fresh</b><small>Clean, airy, green</small></span></label></div><button class="button button-dark finder-next" type="button" data-finder-next>Next <span class="arrow-icon" aria-hidden="true"></span></button></fieldset>
-        <fieldset class="finder-step" data-step="2"><p class="eyebrow">Next</p><h2>When will you wear it?</h2><div class="choice-grid three"><label class="choice-card"><input type="radio" name="occasion" value="Everyday" required><span><b>Everyday</b><small>Easy, clean, not too much</small></span></label><label class="choice-card"><input type="radio" name="occasion" value="Date Night"><span><b>Date night</b><small>Warm and a little closer</small></span></label><label class="choice-card"><input type="radio" name="occasion" value="Special"><span><b>Big plans</b><small>More depth, more presence</small></span></label><label class="choice-card"><input type="radio" name="occasion" value="Office"><span><b>Work</b><small>Neat, fresh, low fuss</small></span></label><label class="choice-card"><input type="radio" name="occasion" value="Weekend"><span><b>Weekend</b><small>Relaxed and easy</small></span></label></div><div class="finder-buttons"><button class="text-button finder-back" type="button" data-finder-back>Back</button><button class="button button-dark finder-next" type="button" data-finder-next>Next <span class="arrow-icon" aria-hidden="true"></span></button></div></fieldset>
+
+        <fieldset class="finder-step" data-step="2"><p class="eyebrow">Next</p><h2>When will you wear it?</h2><div class="choice-grid three"><label class="choice-card"><input type="radio" name="occasion" value="Everyday" required><span><b>Everyday</b><small>Easy, clean, not too much</small></span></label><label class="choice-card"><input type="radio" name="occasion" value="Date Night"><span><b>Date night</b><small>Warm and a little closer</small></span></label><label class="choice-card"><input type="radio" name="occasion" value="Special"><span><b>Big plans</b><small>More depth. More presence.</small></span></label><label class="choice-card"><input type="radio" name="occasion" value="Office"><span><b>Work</b><small>Neat, fresh, low fuss</small></span></label><label class="choice-card"><input type="radio" name="occasion" value="Weekend"><span><b>Weekend</b><small>Relaxed and easy</small></span></label></div><div class="finder-buttons"><button class="text-button finder-back" type="button" data-finder-back>Back</button><button class="button button-dark finder-next" type="button" data-finder-next>Next <span class="arrow-icon" aria-hidden="true"></span></button></div></fieldset>
+
         <fieldset class="finder-step" data-step="3"><p class="eyebrow">One more</p><h2>How much presence do you like?</h2><div class="choice-grid three"><label class="choice-card"><input type="radio" name="strength" value="Soft" required><span><b>Soft</b><small>Close to the skin</small></span></label><label class="choice-card"><input type="radio" name="strength" value="Medium"><span><b>Balanced</b><small>Noticeable but easy</small></span></label><label class="choice-card"><input type="radio" name="strength" value="Bold"><span><b>Bold</b><small>People know you are there</small></span></label></div><div class="finder-buttons"><button class="text-button finder-back" type="button" data-finder-back>Back</button><button class="button button-dark finder-next" type="button" data-finder-next>Next <span class="arrow-icon" aria-hidden="true"></span></button></div></fieldset>
+
         <fieldset class="finder-step" data-step="4"><p class="eyebrow">Last one</p><h2>Who is this for?</h2><div class="choice-grid three"><label class="choice-card"><input type="radio" name="gender" value="Women" required><span><b>For her</b><small>Women</small></span></label><label class="choice-card"><input type="radio" name="gender" value="Men"><span><b>For him</b><small>Men</small></span></label><label class="choice-card"><input type="radio" name="gender" value="Unisex"><span><b>Anyone</b><small>Unisex</small></span></label></div><div class="finder-buttons"><button class="text-button finder-back" type="button" data-finder-back>Back</button><button class="button button-dark" type="submit">Show my scents <span class="arrow-icon" aria-hidden="true"></span></button></div></fieldset>
       </form>
-      <div class="finder-results" data-finder-results hidden><div class="finder-result-heading"><p class="eyebrow">Your picks</p><h2>Start with these.</h2><p data-finder-summary></p></div><div class="product-grid product-grid-four" data-finder-grid></div><button class="text-button" type="button" data-finder-restart>Start again</button></div>
+
+      <div class="finder-results" data-finder-results hidden><div class="finder-result-heading"><p class="eyebrow">Your picks</p><h2>Start with these.</h2><p data-finder-summary></p></div><div class="product-grid product-grid-three" data-finder-grid></div><a class="button button-dark" href="shop.html">See the full shop <span class="arrow-icon" aria-hidden="true"></span></a></div>
     </section>
   </main>
-
-  <footer class="site-footer"><div class="section-shell footer-top"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a><p>Fragrance for regular days and the good ones.</p></div><div class="footer-column"><p class="footer-label">Shop</p><a href="shop.html">All scents</a><a href="shop.html?gender=Women">Women</a><a href="shop.html?gender=Men">Men</a><a href="shop.html?gender=Unisex">Unisex</a></div><div class="footer-column"><p class="footer-label">Find</p><a href="finder.html">Find your scent</a><a href="shop.html?scent=Floral">Soft</a><a href="shop.html?scent=Woody">Deep</a><a href="shop.html?scent=Citrus">Fresh</a></div><div class="footer-column"><p class="footer-label">Help</p><a href="about.html">About Sweets</a><a href="contact.html">Contact</a><a href="cart.html">Your bag</a></div><div class="footer-column"><p class="footer-label">Follow</p><a href="#">Instagram</a><a href="#">TikTok</a><a href="mailto:hello@sweetsfragrance.com">Email us</a></div></div><div class="section-shell footer-bottom"><span>© <span data-year></span> Sweets</span><span>Concept site. Product details are sample content.</span><span>Made to smell good.</span></div></footer>
+  <footer class="site-footer">
+  <div class="section-shell footer-top">
+    <div class="footer-brand">
+      <a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">S</span><span>Sweets</span></a>
+      <p>Fragrance for regular days and the good ones.</p>
+      <a class="footer-editorial-link" href="finder.html">Find your scent <span class="arrow-icon" aria-hidden="true"></span></a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Shop</p>
+      <a href="shop.html">All scents</a>
+      <a href="shop.html?gender=Women">Women</a>
+      <a href="shop.html?gender=Men">Men</a>
+      <a href="shop.html?gender=Unisex">Unisex</a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Help</p>
+      <a href="finder.html">Find your scent</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Your bag</a>
+      <a href="about.html">About Sweets</a>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">Follow</p>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="TikTok">TikTok</a>
+      <a href="mailto:hello@sweetsfragrance.com">Email us</a>
+    </div>
+  </div>
+  <div class="section-shell footer-bottom">
+    <span>© <span data-year></span> Sweets</span>
+    <span>Concept site. Product details are sample content.</span>
+    <span>Made to smell good.</span>
+  </div>
+</footer>
 </body>
 </html>
