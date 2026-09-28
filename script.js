@@ -61,8 +61,8 @@ function productCardMarkup(p){
           <h3 class="product-name">${p.name}</h3>
           <span class="product-card-arrow arrow-icon" aria-hidden="true"></span>
         </div>
-        <p class="product-sub">${p.gender} · ${p.volume}</p>
-        <p class="product-rating">${p.rating.toFixed(1)} / 5 · ${p.reviews} reviews</p>
+        <p class="product-sub"><span>${p.gender}</span><span class="product-sub-separator"></span><span>${p.volume}</span></p>
+        <p class="product-rating">${p.rating.toFixed(1)} / 5 / ${p.reviews} reviews</p>
       </div>
     </a>
   </article>`;
@@ -197,7 +197,7 @@ function initProduct(){
   document.querySelector("[data-product-thumbs]").innerHTML=p.images.map((src,i)=>`<button type="button" class="product-thumb ${i===0?"active":""}" style="background-image:url('${src}&w=400')" aria-label="View image ${i+1}"></button>`).join("");
   document.querySelectorAll(".product-thumb").forEach((btn,i)=>btn.addEventListener("click",()=>{main.style.backgroundImage=`url('${p.images[i]}&w=1500')`;document.querySelectorAll(".product-thumb").forEach(x=>x.classList.remove("active"));btn.classList.add("active")}));
   const set=(sel,val)=>{const el=document.querySelector(sel);if(el)el.textContent=val};
-  set("[data-product-gender]",`${p.gender} · ${p.scent}`);set("[data-product-name]",title);set("[data-product-price]",formatMoney(p.price));set("[data-product-rating]",`${p.rating.toFixed(1)} / 5`);set("[data-product-reviews]",`${p.reviews} reviews`);set("[data-product-description]",p.feel);set("[data-product-feel]",p.feel);set("[data-note-top]",p.notes.top);set("[data-note-heart]",p.notes.heart);set("[data-note-base]",p.notes.base);set("[data-note-top-short]",p.notes.top.split(",")[0]);set("[data-note-heart-short]",p.notes.heart.split(",")[0]);set("[data-note-base-short]",p.notes.base.split(",")[0]);set("[data-story-title]",p.story);set("[data-story-copy]",p.feel);
+  set("[data-product-gender]",`${p.gender} / ${p.scent}`);set("[data-product-name]",title);set("[data-product-price]",formatMoney(p.price));set("[data-product-rating]",`${p.rating.toFixed(1)} / 5`);set("[data-product-reviews]",`${p.reviews} reviews`);set("[data-product-description]",p.feel);set("[data-product-feel]",p.feel);set("[data-note-top]",p.notes.top);set("[data-note-heart]",p.notes.heart);set("[data-note-base]",p.notes.base);set("[data-note-top-short]",p.notes.top.split(",")[0]);set("[data-note-heart-short]",p.notes.heart.split(",")[0]);set("[data-note-base-short]",p.notes.base.split(",")[0]);set("[data-story-title]",p.story);set("[data-story-copy]",p.feel);
   let qty=1, size=50;
   document.querySelectorAll("[data-size]").forEach(btn=>btn.addEventListener("click",()=>{size=Number(btn.dataset.size);document.querySelectorAll("[data-size]").forEach(x=>x.classList.remove("active"));btn.classList.add("active");set("[data-size-value]",`${size} ml`)}));
   document.querySelector("[data-qty-minus]")?.addEventListener("click",()=>{qty=Math.max(1,qty-1);set("[data-product-qty]",qty)});
