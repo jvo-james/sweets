@@ -112,29 +112,122 @@ function initHome(){
   if(newWrap){
     const items=products.filter(p=>p.new).slice(0,8);
     newWrap.innerHTML=items.map(productCardMarkup).join("");
+
     const slider=newWrap.closest("[data-new-slider]");
+    const viewport=slider?.querySelector(".new-slider-viewport");
     const prev=slider?.querySelector("[data-new-prev]");
     const next=slider?.querySelector("[data-new-next]");
     let index=0;
-    const visible=()=>window.matchMedia("(max-width:1120px)").matches?2:4;
-    const step=()=> {
+    let autoplayTimer=null;
+    let touchStartX=0;
+    let touchStartY=0;
+    let isTouching=false;
+
+    const visible=()=>window.matchMedia("(max-width:780px)").matches?1.5:(window.matchMedia("(max-width:1120px)").matches?2:4);
+    const maxIndex=()=>Math.max(0,Math.floor(items.length-visible()));
+    const step=()=>{
       const card=newWrap.querySelector(".product-card");
       if(!card)return 0;
       const styles=getComputedStyle(newWrap);
-      return card.getBoundingClientRect().width + parseFloat(styles.columnGap || styles.gap || 0);
+      const gap=parseFloat(styles.columnGap || styles.gap || 0) || 0;
+      return card.getBoundingClientRect().width + gap;
     };
+
     const refresh=()=>{
-      const maxIndex=Math.max(0,items.length-visible());
-      index=Math.min(index,maxIndex);
+      const max=maxIndex();
+      if(index>max)index=0;
+      if(index<0)index=max;
       const distance=step()*index;
       newWrap.style.transform=`translate3d(${-distance}px,0,0)`;
-      if(prev)prev.disabled=index<=0;
-      if(next)next.disabled=index>=maxIndex;
     };
-    prev?.addEventListener("click",()=>{index=Math.max(0,index-1);refresh()});
-    next?.addEventListener("click",()=>{index=Math.min(Math.max(0,items.length-visible()),index+1);refresh()});
-    window.addEventListener("resize",refresh,{passive:true});
-    requestAnimationFrame(refresh);
+
+    const goNext=({wrap=true}={})=>{
+      const max=maxIndex();
+      if(!max)return;
+      if(index>=max){
+        if(wrap)index=0;
+        else return;
+      }else{
+        index+=1;
+      }
+      refresh();
+    };
+
+    const goPrev=({wrap=true}={})=>{
+      const max=maxIndex();
+      if(!max)return;
+      if(index<=0){
+        if(wrap)index=max;
+        else return;
+      }else{
+        index-=1;
+      }
+      refresh();
+    };
+
+    const stopAutoplay=()=>{
+      if(autoplayTimer){
+        window.clearInterval(autoplayTimer);
+        autoplayTimer=null;
+      }
+    };
+
+    const startAutoplay=()=>{
+      stopAutoplay();
+      if(items.length<=visible() || window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+      autoplayTimer=window.setInterval(()=>goNext(),3800);
+    };
+
+    prev?.addEventListener("click",()=>{goPrev();startAutoplay()});
+    next?.addEventListener("click",()=>{goNext();startAutoplay()});
+
+    viewport?.addEventListener("touchstart",event=>{
+      const touch=event.touches[0];
+      if(!touch)return;
+      isTouching=true;
+      touchStartX=touch.clientX;
+      touchStartY=touch.clientY;
+      stopAutoplay();
+    },{passive:true});
+
+    viewport?.addEventListener("touchend",event=>{
+      if(!isTouching)return;
+      isTouching=false;
+      const touch=event.changedTouches[0];
+      if(!touch){startAutoplay();return;}
+      const dx=touch.clientX-touchStartX;
+      const dy=touch.clientY-touchStartY;
+      if(Math.abs(dx)>45 && Math.abs(dx)>Math.abs(dy)*1.2){
+        if(dx<0)goNext();
+        else goPrev();
+      }
+      startAutoplay();
+    },{passive:true});
+
+    viewport?.addEventListener("touchcancel",()=>{
+      isTouching=false;
+      startAutoplay();
+    },{passive:true});
+
+    slider?.addEventListener("mouseenter",stopAutoplay);
+    slider?.addEventListener("mouseleave",startAutoplay);
+    slider?.addEventListener("focusin",stopAutoplay);
+    slider?.addEventListener("focusout",startAutoplay);
+
+    document.addEventListener("visibilitychange",()=>{
+      if(document.hidden)stopAutoplay();
+      else startAutoplay();
+    });
+
+    window.addEventListener("resize",()=>{
+      refresh();
+      startAutoplay();
+    },{passive:true});
+
+    requestAnimationFrame(()=>{
+      refresh();
+      startAutoplay();
+    });
   }
 
   const bestWrap=document.querySelector("[data-home-best-gallery]");
